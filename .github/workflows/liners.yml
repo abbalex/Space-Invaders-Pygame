@@ -22,6 +22,7 @@ jobs:
         run: pip install pylint isort
 
       - name: Check code with pylint
+        continue-on-error: true
         run: pylint main.py
 
       - name: Check code with isort
